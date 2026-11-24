@@ -78,8 +78,8 @@ export default function PrivacyPage() {
 
         <h2>Who we share it with</h2>
         <p>
-          Only service providers who help us run the waitlist, under contract: Airtable (database, USA) and Vercel
-          (website hosting, USA). When bookings open, we will tell you about any new providers before they process
+          Only service providers who help us run the waitlist, under contract: Airtable (database, USA) and
+          Cloudflare (website hosting and security, USA). When bookings open, we will tell you about any new providers before they process
           your data. We don&apos;t share your details with mentors until you book a session with them.
         </p>
 
