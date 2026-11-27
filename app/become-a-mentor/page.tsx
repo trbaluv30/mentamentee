@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+import { QueryFormError } from "@/components/QueryFormError";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -5,7 +7,6 @@ import {
   ChoiceGroup,
   CountryField,
   Fieldset,
-  FormError,
   Honeypot,
   SelectField,
   SubmitButton,
@@ -45,10 +46,7 @@ const STEPS = [
   "Sign the mentor agreement. Set up your profile and the times you are free.",
 ];
 
-type Props = { searchParams: Promise<{ error?: string }> };
-
-export default async function BecomeAMentorPage({ searchParams }: Props) {
-  const { error } = await searchParams;
+export default function BecomeAMentorPage() {
   return (
     <>
       <section aria-labelledby="mentor-title" className="bg-teal-800 text-white">
@@ -118,7 +116,9 @@ export default async function BecomeAMentorPage({ searchParams }: Props) {
         <Container className="max-w-3xl pb-14 md:pb-20">
           <H2 id="apply-title">Apply to mentor.</H2>
           <form id="form" action="/api/mentor-application" method="post" className="relative mt-8 space-y-6 scroll-mt-24">
-            <FormError message={error} />
+            <Suspense fallback={null}>
+              <QueryFormError />
+            </Suspense>
             <Honeypot />
             <TimezoneInput />
 
