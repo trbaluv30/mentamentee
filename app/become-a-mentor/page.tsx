@@ -181,7 +181,7 @@ export default async function BecomeAMentorPage({ searchParams }: Props) {
               <TextField
                 name="languages"
                 label="Other languages you speak"
-                placeholder="Hindi, Tagalog, Urdu…"
+                placeholder="Tamil, Armenian, Hindi, Tagalog, Urdu…"
                 maxLength={120}
               />
               <SelectField name="heard_from" label="How did you hear about us?" options={HEARD_FROM} />
