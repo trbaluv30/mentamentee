@@ -155,7 +155,7 @@ export default async function JoinPage({ searchParams }: Props) {
               name="languages"
               label="Other languages you speak"
               hint="Sessions are in English. This helps us match you."
-              placeholder="Hindi, Tagalog, Urdu…"
+              placeholder="Tamil, Armenian, Hindi, Tagalog, Urdu…"
               maxLength={120}
             />
             <SelectField name="heard_from" label="How did you hear about us?" options={HEARD_FROM} />
