@@ -23,7 +23,6 @@ import {
   HEARD_FROM,
   MENTEE_STAGES,
   PROFESSIONS,
-  SESSION_MODES,
   targetYears,
 } from "@/lib/options";
 
@@ -129,8 +128,6 @@ export default async function JoinPage({ searchParams }: Props) {
               label="When do you hope to start abroad?"
               options={targetYears()}
             />
-            <SelectField name="session_mode" label="How would you like to meet?" required options={SESSION_MODES} />
-            <TextField name="city" label="Your city" hint="Helps us find in-person study partners near you." maxLength={80} />
             <ChoiceGroup
               name="exams"
               label="Exams you've taken or are planning"

@@ -10,7 +10,6 @@ import {
   HEARD_FROM,
   MENTEE_STAGES,
   PROFESSIONS,
-  SESSION_MODES,
   targetYears,
   values,
 } from "@/lib/options";
@@ -18,7 +17,7 @@ import {
 export const runtime = "nodejs";
 
 const TABLE = process.env.AIRTABLE_WAITLIST_TABLE || "Waitlist";
-const PRIVACY_VERSION = "waitlist-draft-2026-11-24";
+const PRIVACY_VERSION = "waitlist-draft-2026-11-27";
 
 export async function POST(req: Request) {
   const fd = await req.formData();
@@ -54,8 +53,6 @@ export async function POST(req: Request) {
       required: true,
       label: "destination",
     }),
-    "Session preference": f.choice("session_mode", values(SESSION_MODES), { required: true, label: "Session type" }),
-    City: f.text("city", { max: 80 }),
     "Target year": f.choice("target_year", values(targetYears(new Date().getFullYear() - 1))),
     "Exams taken or planned": f.many("exams", values(EXAMS)),
     "Biggest question": f.text("biggest_question", { required: true, max: 1000, label: "Your biggest question" }),

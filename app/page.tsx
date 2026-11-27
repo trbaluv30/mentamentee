@@ -31,8 +31,8 @@ const TRUST = [
     body: "We check each mentor's ID and their university, hospital or license records. Only then do they get the Verified badge.",
   },
   {
-    title: "You meet online or in person",
-    body: "Video calls from anywhere. Or meet in your city, in public places only, after both of you are ID-checked.",
+    title: "You meet online, from anywhere",
+    body: "Every session is a video call on our platform. Distance is no longer a barrier. We do not set up in-person meetings.",
   },
   {
     title: "You get honest guidance",
@@ -69,7 +69,7 @@ export default function HomePage() {
             </Cta>
           </div>
           <ul className="mt-8 flex flex-col gap-3 text-[15px] font-semibold text-slate-700 sm:flex-row sm:flex-wrap sm:gap-6">
-            {["Verified mentors only", "Online and in person", "Medicine · Nursing · Physiotherapy"].map((t) => (
+            {["Verified mentors only", "Online, from anywhere", "Medicine · Nursing · Physiotherapy"].map((t) => (
               <li key={t} className="flex items-center gap-2">
                 <CheckIcon className="h-5 w-5 text-teal-600" />
                 {t}

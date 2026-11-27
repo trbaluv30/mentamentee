@@ -100,9 +100,9 @@ export default function HowItWorksPage() {
       <section aria-labelledby="modes-title">
         <Container className="grid gap-6 py-14 md:grid-cols-2 md:py-20">
           <div className="md:col-span-2">
-            <Eyebrow>Online and in person</Eyebrow>
+            <Eyebrow>Online, from anywhere</Eyebrow>
             <H2 id="modes-title" className="mt-3 max-w-3xl">
-              Meet the way that works for you.
+              The internet closes the distance.
             </H2>
           </div>
           <div className="rounded-3xl border border-slate-200 p-6 md:p-8">
@@ -113,11 +113,11 @@ export default function HowItWorksPage() {
             </p>
           </div>
           <div className="rounded-3xl border border-slate-200 p-6 md:p-8">
-            <h3 className="text-2xl font-black text-slate-950">In person</h3>
+            <h3 className="text-2xl font-black text-slate-950">Online only</h3>
             <p className="mt-2 text-lg leading-relaxed text-slate-700">
-              Study partners in your home city, or a friendly local when you first arrive abroad. Public places only,
-              both people verified first, and you can share your meetup location with family. In-person sessions are
-              for adults (18+) only.
+              Every session happens on our platform. We do not set up, check or watch in-person meetings. If you
+              choose to meet someone in person, that is your own choice and your own risk. Paid mentoring must still
+              be booked and paid here.
             </p>
           </div>
         </Container>

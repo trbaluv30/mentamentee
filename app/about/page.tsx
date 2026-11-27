@@ -19,7 +19,7 @@ import { MobileCta } from "@/components/MobileCta";
 export const metadata: Metadata = {
   title: "About Ment-a-Mentee | Verified Healthcare Mentors",
   description:
-    "Your dream career in health starts with a mentor. Meet verified doctors, nurses and physios a few years ahead of you, online or in person.",
+    "Your dream career in health starts with a mentor. Meet verified doctors, nurses and physios a few years ahead of you, online, from anywhere.",
   openGraph: {
     title: "About Ment-a-Mentee",
     description: "Your dream career in health starts with a mentor, now and here.",
@@ -42,7 +42,7 @@ const VISION =
 
 // Mission M1 (recommended, pending adoption)
 const MISSION =
-  "Ment-a-Mentee connects students and early-career professionals in medicine, nursing and physiotherapy with verified peer mentors who are just a few years ahead of them, online and in person, so they can plan the next five to six years with confidence and avoid costly degree, licensing and visa mistakes.";
+  "Ment-a-Mentee connects students and early-career professionals in medicine, nursing and physiotherapy with verified peer mentors who are just a few years ahead of them, online and across borders, so they can plan the next five to six years with confidence and avoid costly degree, licensing and visa mistakes.";
 
 // Tagline M2 (recommended, pending adoption)
 const TAGLINE =
@@ -87,7 +87,7 @@ const VALUES = [
   {
     title: "Verified Trust",
     promise: "You know who you're talking to.",
-    body: "Every mentor you meet has passed identity and credential checks, and every in-person meetup follows clear safety rules. Your trust comes first, before any session.",
+    body: "Every mentor you meet has passed identity and credential checks, and every session happens online, on our platform. Your trust comes first, before any session.",
   },
   {
     title: "Lived Experience",
@@ -396,10 +396,9 @@ export default function AboutPage() {
               ))}
             </ol>
             <p className="mt-8 max-w-3xl text-slate-700">
-              <strong className="text-slate-900">Online and in person.</strong> Meet your mentor by video from home, join
-              a study partner meetup in your city, or get practical help when you arrive in your new city abroad: housing,
-              banking and hospital culture. In-person meetups happen only in public venues and only between verified
-              adults.
+              <strong className="text-slate-900">Online, from anywhere.</strong> You meet your mentor by video, from your
+              own home. Distance should not stop you from getting good advice. Every session happens online, on our
+              platform. We do not set up in-person meetings.
             </p>
           </div>
         </section>

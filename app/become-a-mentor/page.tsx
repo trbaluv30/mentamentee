@@ -177,20 +177,6 @@ export default async function BecomeAMentorPage({ searchParams }: Props) {
                 columns={1}
                 options={FRAMEWORK_STAGES}
               />
-              <fieldset className="md:col-span-2">
-                <legend className="label">How can you meet mentees?</legend>
-                <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                  <label className="choice">
-                    <input type="checkbox" name="offers_online" value="yes" defaultChecked />
-                    <span>Online video sessions</span>
-                  </label>
-                  <label className="choice">
-                    <input type="checkbox" name="offers_in_person" value="yes" />
-                    <span>In person, in my city (adults only)</span>
-                  </label>
-                </div>
-              </fieldset>
-              <TextField name="city" label="Your city" hint="Needed if you can meet in person." maxLength={80} />
               <SelectField name="hours" label="Hours you can give each month" required options={HOURS_PER_MONTH} />
               <TextField
                 name="languages"

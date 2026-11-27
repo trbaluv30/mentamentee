@@ -60,12 +60,6 @@ export const FRAMEWORK_STAGES: Option[] = [
   { value: "years_5_6", label: "Years 5–6: electives, LoRs, residency / registration" },
 ];
 
-export const SESSION_MODES: Option[] = [
-  { value: "online", label: "Online video sessions" },
-  { value: "in_person", label: "In person, in my city" },
-  { value: "both", label: "Either is fine" },
-];
-
 export const AGE_BANDS: Option[] = [
   { value: "under_16", label: "Under 16" },
   { value: "16_17", label: "16–17" },

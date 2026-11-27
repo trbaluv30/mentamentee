@@ -5,7 +5,7 @@ import { Container, DraftBanner } from "@/components/ui";
 
 export const metadata: Metadata = { title: "Terms (draft)" };
 
-// Source: legal/02-terms-of-service-DRAFT.md v0.4 (plain-English summary only).
+// Source: legal/02-terms-of-service-DRAFT.md v0.5 (plain-English summary only).
 // The full Terms are under attorney review (launch plan LEG-03/LEG-04) and must be
 // published here before the first paid session.
 
@@ -13,7 +13,7 @@ export default function TermsPage() {
   return (
     <Container className="max-w-3xl py-10 md:py-16">
       <h1 className="text-4xl font-black tracking-tight text-slate-950 md:text-5xl">Terms of Service</h1>
-      <p className="mt-2 text-slate-600">Draft v0.4 · Waitlist stage</p>
+      <p className="mt-2 text-slate-600">Draft v0.5 · Waitlist stage</p>
       <div className="mt-6">
         <DraftBanner>
           These Terms are a draft under legal review. Right now Ment-a-Mentee only runs a free waitlist and mentor
@@ -61,7 +61,10 @@ export default function TermsPage() {
             tolerance for sexual or adult content and harassment.
           </li>
           <li>
-            In-person sessions happen in <strong>public places only</strong>, after both people are verified.
+            Ment-a-Mentee is <strong>online only</strong>. We do not offer or set up in-person meetings. If you choose
+            to meet someone in person, that is your own choice and your own risk. We do not check, watch or protect
+            those meetings, and we are not responsible for them. Paid mentoring must still be booked and paid on the
+            platform. No one may meet a user under 18 in person.
           </li>
           <li>
             We don&apos;t record or watch sessions by default.
