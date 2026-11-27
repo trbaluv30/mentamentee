@@ -39,13 +39,13 @@ export default function PrivacyPage() {
         <ul>
           <li>
             <strong>Mentees:</strong> your name, email, optional WhatsApp number, age band, home country, country you
-            live in, career goal, stage, target destinations, preferred session type, optional city, exams, your biggest
+            live in, career goal, stage, target destinations, exams, your biggest
             question, optional budget range, languages, how you heard about us and your browser&apos;s time zone. If you
             are 16 or 17, your parent or guardian&apos;s name and email.
           </li>
           <li>
             <strong>Mentor applicants:</strong> your name, email, optional WhatsApp and LinkedIn, home and current
-            country, city, profession, stage, specialty, exams cleared, where you are registered, what and how you can
+            country, profession, stage, specialty, exams cleared, where you are registered, what you can
             mentor, availability, languages and motivation.
           </li>
         </ul>

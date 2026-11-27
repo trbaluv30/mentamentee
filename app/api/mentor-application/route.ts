@@ -15,14 +15,13 @@ import {
 export const runtime = "nodejs";
 
 const TABLE = process.env.AIRTABLE_MENTORS_TABLE || "Mentor Applications";
-const PRIVACY_VERSION = "waitlist-draft-2026-11-24";
+const PRIVACY_VERSION = "waitlist-draft-2026-11-27";
 const BACK = "/become-a-mentor";
 
 export async function POST(req: Request) {
   const f = new FormReader(await req.formData());
   if (f.isBot()) return redirectTo(req, "/thanks?for=mentor");
 
-  const offersInPerson = f.checked("offers_in_person");
   const record = {
     "Full name": f.text("full_name", { required: true, max: 120, label: "Full name" }),
     Email: f.email("email", { required: true, label: "Email" }),
@@ -33,7 +32,6 @@ export async function POST(req: Request) {
       required: true,
       label: "Where you live now",
     }),
-    City: f.text("city", { max: 80 }),
     Profession: f.choice("profession", values(PROFESSIONS), { required: true, label: "Profession" }),
     "Current stage": f.choice("stage", values(MENTOR_STAGES), { required: true, label: "Current stage" }),
     Specialty: f.text("specialty", { max: 120 }),
@@ -44,8 +42,6 @@ export async function POST(req: Request) {
       required: true,
       label: "stage you can guide",
     }),
-    "Offers online": f.checked("offers_online"),
-    "Offers in person": offersInPerson,
     "Hours per month": f.choice("hours", values(HOURS_PER_MONTH), { required: true, label: "Hours per month" }),
     "Other languages": f.text("languages", { max: 120 }),
     Motivation: f.text("motivation", { required: true, max: 1500, label: "Why you want to mentor" }),
@@ -58,8 +54,6 @@ export async function POST(req: Request) {
     Status: "New",
   };
 
-  if (!record["Offers online"] && !offersInPerson) f.errors.push("Choose online, in person, or both");
-  if (offersInPerson && !record.City) f.errors.push("Tell us which city you could meet mentees in");
   if (!record["Confirms 18+"]) f.errors.push("Mentors must be 18 or older");
   if (!record["Verification consent"]) f.errors.push("Please agree to identity and credential verification");
   if (!record["Privacy consent"]) f.errors.push("Please agree to the privacy notice so we can store your details");

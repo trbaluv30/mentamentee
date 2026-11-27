@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 export const DISCLAIMER =
-  "Sessions on Ment-a-Mentee are peer educational guidance from people who have walked this path. They are not legal, immigration, financial or medical advice. Always confirm licensing, registration and visa requirements with the official body (for example ECFMG, NCSBN, CGFNS, FSBPT, AMC, AHPRA, the Medical, Nursing or Physiotherapy Council, or the relevant embassy). Ment-a-Mentee is not affiliated with the NRMP or any licensing or registration authority.";
+  "Sessions on Ment-a-Mentee are peer educational guidance from people who have walked this path. They are not legal, immigration, financial or medical advice. Always confirm licensing, registration and visa requirements with the official body (for example ECFMG, NCSBN, CGFNS, FSBPT, AMC, AHPRA, the Medical, Nursing or Physiotherapy Council, or the relevant embassy). Ment-a-Mentee is not affiliated with the NRMP or any licensing or registration authority. Ment-a-Mentee is online only. We do not set up, check or watch in-person meetings. If you choose to meet someone in person, that is your own choice and your own risk, and we are not responsible for it. Any paid mentoring must still be booked and paid on Ment-a-Mentee.";
 
 export function Container({ children, className = "" }: { children: ReactNode; className?: string }) {
   return <div className={`mx-auto w-full max-w-6xl px-4 md:px-6 ${className}`}>{children}</div>;
